@@ -1,0 +1,8 @@
+def aplicar_desconto(preco):
+    desconto = preco * 0.10
+    return preco - desconto
+
+preco = float(input("Digite o preço do produto: "))
+novo_preco = aplicar_desconto(preco)
+
+print(f"Preço com 10% de desconto: R$ {novo_preco:.2f}")

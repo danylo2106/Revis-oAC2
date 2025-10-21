@@ -1,0 +1,5 @@
+from funcoes_bolsa import verificar_acao
+
+valor = float(input("Digite o valor da ação: "))
+resultado = verificar_acao(valor)
+print(resultado)

@@ -1,0 +1,13 @@
+def autenticar(email, senha):
+    if email == 'admin' and senha == 'admin':
+        return True
+    else:
+        return False
+
+email = input("Digite seu email: ")
+senha = input("Digite sua senha: ")
+
+if autenticar(email, senha):
+    print("Login realizado com sucesso!")
+else:
+    print("Email ou senha incorretos!")

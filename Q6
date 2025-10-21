@@ -1,0 +1,8 @@
+def adicionar_imposto(preco):
+    imposto = preco * 0.15
+    return preco + imposto
+
+preco = float(input("Digite o preço do produto: "))
+final = adicionar_imposto(preco)
+
+print(f"Preço final com 15% de imposto: R$ {final:.2f}")

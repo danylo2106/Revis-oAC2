@@ -1,0 +1,17 @@
+def calcular_imc(peso, altura):
+    return peso / (altura ** 2)
+
+def classificar_imc(imc):
+    if imc < 18.5:
+        return "Abaixo do peso"
+    elif imc < 25:
+        return "Peso normal"
+    else:
+        return "Acima do peso"
+
+peso = float(input("Digite seu peso (kg): "))
+altura = float(input("Digite sua altura (m): "))
+
+imc = calcular_imc(peso, altura)
+print(f"Seu IMC é {imc:.2f}")
+print(f"Classificação: {classificar_imc(imc)}")
